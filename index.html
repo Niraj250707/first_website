@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Span - Health & Medical Services</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="doctor-animation">
+        <img src="doctor.jpg" alt="Doctor AI Agent" class="doctor-img">
+        <div class="chat-bubble">
+          <span id="chatText">Hello! I'm Dr. Span, your health assistant. How can I help you today?</span>
+        </div>
+      </div>
+      <h1>Welcome to Life Span</h1>
+      <p class="intro">
+        Life Span.com is dedicated to providing reliable health and medical services for humans, animals, and vehicles. Our AI agents are here to guide you, answer your queries, and connect you with the best care. <br>
+        <strong>Our Goal:</strong> To make healthcare accessible, interactive, and trustworthy for everyone.
+      </p>
+    </header>
+
+    <div id="authContainer">
+      <div id="signInForm" class="auth-form active">
+        <h2>Sign In</h2>
+        <form id="signIn">
+          <div class="form-group">
+            <label for="signInEmail">Email:</label>
+            <input type="email" id="signInEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="signInPassword">Password:</label>
+            <input type="password" id="signInPassword" required>
+          </div>
+          <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+        <p>Don't have an account? <button class="link-btn" onclick="toggleAuth()">Sign Up</button></p>
+      </div>
+
+      <div id="signUpForm" class="auth-form">
+        <h2>Sign Up</h2>
+        <form id="signUp">
+          <div class="form-group">
+            <label for="signUpName">Full Name:</label>
+            <input type="text" id="signUpName" required>
+          </div>
+          <div class="form-group">
+            <label for="signUpEmail">Email:</label>
+            <input type="email" id="signUpEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="signUpPassword">Password:</label>
+            <input type="password" id="signUpPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="signUpType">User Type:</label>
+            <select id="signUpType" required>
+              <option value="">Select</option>
+              <option value="human">Human</option>
+              <option value="animal">Animal</option>
+              <option value="vehicle">Vehicle</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <button class="link-btn" onclick="toggleAuth()">Sign In</button></p>
+      </div>
+    </div>
+
+    <div id="serviceSection" class="service-section">
+      <h2>Select Your Service</h2>
+      <div class="services">
+        <div class="service-card" id="humanService">
+          <img src="human.png" alt="Human Health">
+          <span>Human</span>
+        </div>
+        <div class="service-card" id="animalService">
+          <img src="OIP.png" alt="Animal Health">
+          <span>Animal</span>
+        </div>
+        <div class="service-card" id="vehicleService">
+          <img src="car.png" alt="Vehicle Health">
+          <span>Vehicle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
